@@ -59,18 +59,25 @@ GavinSC34
 ---------------------------------------------
 
 Automated Sprinkler System for Bushfire Protection
-The Project
 
 The project aims to protect the house from bushfire when we are told to evacuate. There is a likelihood of losing both mains electricity and mobile phone coverage in a major fire. We have limited water to fight fires and do not have ‘off the grid’ solar power available. Your situation might be different of course, you might even have the luxury of a piped, good pressure, water supply.
 
 Concept
+
 Use a deep cycle battery and 12 volt pump to spray water around the house. Since a small pump has limited capacity, use a single board computer or micro-controller to sequentially control a number of spray or sprinkler lines. A number of ‘triggers’ are built into the controller, the idea being that the system can be waiting while actively monitoring for a trigger to start the pumping. The triggers utilise temperature and smoke sensors programmed to automatically start the pump at critical thresholds:
+
     • high temperature
+    
     • sudden rise in temperature
+    
     • heavy smoke
+    
     • elevated temperature plus smoke
+    
 As well, the system can be started by
+
     • a start switch (‘start and run’ switch)
+    
     • mobile phone switch linked to the system via the home WiFi and thus the internet. If the WiFi is unavailable the sensors will still work automatically. The mobile phone app also reads the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires.
 
 While a 12v system is designed for the 240v power supply going down, you may want to consider an arrangement that can start on 240v and switch to 12v only if needed. I haven’t attempted this refinement.
