@@ -61,19 +61,19 @@ The project aims to protect the house from bushfire when we are told to evacuate
 
 Use a deep cycle battery and 12 volt pump to spray water around the house. Since a small pump has limited capacity, use a single board computer or micro-controller to sequentially control a number of spray or sprinkler lines. A number of ‘triggers’ are built into the controller, the idea being that the system can be waiting while actively monitoring for a trigger to start the pumping. The triggers utilise temperature and smoke sensors programmed to automatically start the pump at critical thresholds:
 
-    • high temperature
+• high temperature
     
-    • sudden rise in temperature
+• sudden rise in temperature
     
-    • heavy smoke
+• heavy smoke
     
-    • elevated temperature plus smoke
+• elevated temperature plus smoke
     
 As well, the system can be started by
 
-    • a start switch (‘start and run’ switch)
+• a start switch (‘start and run’ switch)
     
-    • mobile phone switch linked to the system via the home WiFi and thus the internet. 
+• mobile phone switch linked to the system via the home WiFi and thus the internet. 
     
     If the WiFi is unavailable the sensors will still work automatically. The mobile phone app also reads the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires.
 
@@ -184,15 +184,16 @@ For eight channels the wiring to each solenoid is repeated in parallel. The deta
 <b>Bushfire behaviour</b>
 
 Bushfire attack essentially takes five forms:
-    • <b>Wind:</b> Strong winds resulting from severe bushfires will drive embers into vulnerable areas of a building, preheat and dry fuel ahead of a fire, lift roofing and extend flames along a more horizontal plane closer to building elements.
+
+• <b>Wind:</b> Strong winds resulting from severe bushfires will drive embers into vulnerable areas of a building, preheat and dry fuel ahead of a fire, lift roofing and extend flames along a more horizontal plane closer to building elements.
     
-    • <b>Smoke:</b> While smoke will cause minimal damage to property, it can severely affect the health of residents. Smoke is a significant factor in at risk developments, particularly where residents are susceptible to respiratory disorders. Smoke can also reduce visibility during evacuation or shelter situations.
+• <b>Smoke:</b> While smoke will cause minimal damage to property, it can severely affect the health of residents. Smoke is a significant factor in at risk developments, particularly where residents are susceptible to respiratory disorders. Smoke can also reduce visibility during evacuation or shelter situations.
     
-    • <b>Embers:</b> Ember attack is responsible for most bushfire related building fires. Embers can also cause spotting in advance of the bushfire and ignite building elements.
+• <b>Embers:</b> Ember attack is responsible for most bushfire related building fires. Embers can also cause spotting in advance of the bushfire and ignite building elements.
     
-    • <b>Radiant heat:</b> Radiant heat can severely impair the health of residents and the integrity of building elements. Radiant heat can prevent emergency services personnel assisting occupants of at risk developments.
+• <b>Radiant heat:</b> Radiant heat can severely impair the health of residents and the integrity of building elements. Radiant heat can prevent emergency services personnel assisting occupants of at risk developments.
     
-    • <b>Flame:</b> Flame attack will severely restrict fire fighting operations, resulting in the ignition of building elements and a threat to the health of residents and their capacity to evacuate the area.
+• <b>Flame:</b> Flame attack will severely restrict fire fighting operations, resulting in the ignition of building elements and a threat to the health of residents and their capacity to evacuate the area.
     
 -– NSW Rural Fire Service, https://www.rfs.nsw.gov.au/plan-and-prepare/building-in-a-bush-fire-area/what-you-need-to-know/decision-tree-pages/goal-13
 
