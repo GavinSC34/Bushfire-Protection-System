@@ -32,8 +32,6 @@ In Australia and many other countries, rural residents rely on tank water. The p
 
 ![image](https://github.com/user-attachments/assets/0e590538-de56-4061-aa4a-ea10ec9b031e)
 
-<b>Concept</b>
-
 Use a deep cycle battery and 12 volt pump to spray water around the house. Since a small pump has limited capacity, use a micro-controller to sequentially control a number of spray or sprinkler lines. A number of ‘triggers’ are built into the controller, the idea being that the system can be waiting while actively monitoring for a trigger to start the pumping. The triggers utilise temperature and smoke sensors programmed to automatically start the pump at critical thresholds: 
 
 • high temperature 
@@ -55,11 +53,11 @@ Development of the concept is welcomed.
 
 ---------------------------------------------
 
-Automated Sprinkler System for Bushfire Protection
+<b>Automated Sprinkler System for Bushfire Protection</b>
 
 The project aims to protect the house from bushfire when we are told to evacuate. There is a likelihood of losing both mains electricity and mobile phone coverage in a major fire. We have limited water to fight fires and do not have ‘off the grid’ solar power available. Your situation might be different of course, you might even have the luxury of a piped, good pressure, water supply.
 
-Concept
+<b>Concept</b>
 
 Use a deep cycle battery and 12 volt pump to spray water around the house. Since a small pump has limited capacity, use a single board computer or micro-controller to sequentially control a number of spray or sprinkler lines. A number of ‘triggers’ are built into the controller, the idea being that the system can be waiting while actively monitoring for a trigger to start the pumping. The triggers utilise temperature and smoke sensors programmed to automatically start the pump at critical thresholds:
 
@@ -75,11 +73,13 @@ As well, the system can be started by
 
     • a start switch (‘start and run’ switch)
     
-    • mobile phone switch linked to the system via the home WiFi and thus the internet. If the WiFi is unavailable the sensors will still work automatically. The mobile phone app also reads the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires.
+    • mobile phone switch linked to the system via the home WiFi and thus the internet. 
+    
+    If the WiFi is unavailable the sensors will still work automatically. The mobile phone app also reads the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires.
 
 While a 12v system is designed for the 240v power supply going down, you may want to consider an arrangement that can start on 240v and switch to 12v only if needed. I haven’t attempted this refinement.
 
-And the cost? 
+<i>And the cost? </i>
 
 Each situation will be different. For those with off-grid power and a large dam, there is less infrastructure. Much of the work involves siting sprinklers, leading hoses to them, and fitting solenoid valves and wires. The micro-controller costs are surprisingly low but learning to code Arduino boards and the Blynk phone app is a steep learning curve for those not immersed in IT. My code is freely available as an example.
 
