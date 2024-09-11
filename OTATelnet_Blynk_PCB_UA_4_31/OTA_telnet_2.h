@@ -3,8 +3,6 @@
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
 #include <TelnetStream.h>
-// #include </media/drasgard/DATA/Gavin/Arduino/sketchbook/credentials/creds.h>
-//#include <credentials.h>
 #include <creds.h>
 
 void setupOTA() {
