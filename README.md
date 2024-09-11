@@ -75,7 +75,7 @@ As well, the system can be started by
     
 • mobile phone switch linked to the system via the home WiFi and thus the internet. 
     
-    If the WiFi is unavailable the sensors will still work automatically. The mobile phone app also reads the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires.
+If the WiFi is unavailable the sensors will still work automatically. The mobile phone app also reads the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires.
 
 While a 12v system is designed for the 240v power supply going down, you may want to consider an arrangement that can start on 240v and switch to 12v only if needed. I haven’t attempted this refinement.
 
@@ -200,29 +200,39 @@ Bushfire attack essentially takes five forms:
 Your system
 Planning your system requires you to carefully evaluate how to respond to each of those elements of bushfire behaviour.
 
-Wind: you should be aware of your most likely wind direction for bush fire. Gale-force hot winds, which way do they come? What’s affecting the direction? Valleys, trees, vegetation? That side of your house may need more water. If you get the chance, set up a sprinkler next high fire danger day and see what it does. Think about wind carrying your water spray away from where it will be effective. How long will it take to dry that side of your house if you do spray it? How long does it take to wet it down?
-Smoke: isn’t going to burn your house down, but is a warning and thus a trigger for your system. You can have intense smoke from kilometres away, think about how that might work. Really intense pungent smoke is usually an indication that a fire is on top of you. If you have limited water, that should be your trigger. I used a beekeeper’s smoker to calibrate my system.
-Embers: the peril of eucalyptus forests. Consider your house from top to bottom. I have a Colourbond roof and vertical board walls. I have a fine mesh gutter guard in all the buildings’ gutters – for keeping leaves and embers out of my gutters and also to keep leaves out of my water tanks. To cool the boards and windows I have a fine mist line high up the walls and running all the way around the house. This also serves to add to the accumulated water at the foot of the walls, because that is where smouldering or even burning leaves will gather. Further out, I have the heavy duty sprinklers spraying in an arc to saturate the closer trees, shrubs, lawns and walkways.
-Radiant heat: what fuel is near the house? Remove flammable trees or have enough water and spray power to wet them down. Imagine your favourite gums on fire, up their bark and in their crowns. Don’t have an avenue of such trees around your house, particularly on the fire weather side, separated trees are better. Look at the trees for wind protection (needed) and trees as fuel (a problem). It’s a tricky balance that has to be addressed. Also look at adjacent sheds or buildings. Can they catch alight? Look to your windows, how might they be affected?
-Flame: is what we are trying to avoid. Wet, cool surfaces don’t burn. However the extremes of bushfires make it hard to plan for a fire sequence. It might be ember attack, then fire front, then ember attack for hours following. It might be fire front first! Your system has to cope with the possibilities.
+<b>Wind:</b> you should be aware of your most likely wind direction for bush fire. Gale-force hot winds, which way do they come? What’s affecting the direction? Valleys, trees, vegetation? That side of your house may need more water. If you get the chance, set up a sprinkler next high fire danger day and see what it does. Think about wind carrying your water spray away from where it will be effective. How long will it take to dry that side of your house if you do spray it? How long does it take to wet it down?
+
+<b>Smoke:</b> isn’t going to burn your house down, but is a warning and thus a trigger for your system. You can have intense smoke from kilometres away, think about how that might work. Really intense pungent smoke is usually an indication that a fire is on top of you. If you have limited water, that should be your trigger. I used a beekeeper’s smoker to calibrate my system.
+
+<b>Embers:</b> the peril of eucalyptus forests. Consider your house from top to bottom. I have a Colourbond roof and vertical board walls. I have a fine mesh gutter guard in all the buildings’ gutters – for keeping leaves and embers out of my gutters and also to keep leaves out of my water tanks. To cool the boards and windows I have a fine mist line high up the walls and running all the way around the house. This also serves to add to the accumulated water at the foot of the walls, because that is where smouldering or even burning leaves will gather. Further out, I have the heavy duty sprinklers spraying in an arc to saturate the closer trees, shrubs, lawns and walkways.
+
+<b>Radiant heat:</b> what fuel is near the house? Remove flammable trees or have enough water and spray power to wet them down. Imagine your favourite gums on fire, up their bark and in their crowns. Don’t have an avenue of such trees around your house, particularly on the fire weather side, separated trees are better. Look at the trees for wind protection (needed) and trees as fuel (a problem). It’s a tricky balance that has to be addressed. Also look at adjacent sheds or buildings. Can they catch alight? Look to your windows, how might they be affected?
+
+<b>Flame:</b> is what we are trying to avoid. Wet, cool surfaces don’t burn. However the extremes of bushfires make it hard to plan for a fire sequence. It might be ember attack, then fire front, then ember attack for hours following. It might be fire front first! Your system has to cope with the possibilities.
+
 Mine is set up to spray a sequence of a minute each, heavy sprinkler, then mist line, then next heavy sprinkler, then next mist line, working around the house. I checked it out on a high fire danger day with high winds and everything around the house looked flooded. A sequence lasts about seven minutes, then will start again if smoke and temperature trigger it, or I set it going through my phone app. Doing Community Fireguard work for Tasmanian Fire Service some years ago, I took the opportunity to ask people about their experiences in the 1967 fires – still considered one of the worst ever – and later fires. Three observations stuck with me: “The winds were 100 miles an hour, the temperature 100 degrees [F], and the dams were all empty!” (Ted Domeney. talking about 1967.) “I watched the embers flying across the Channel and saw the fires start up on Bruny Island. There were fireballs, burning balls of gas, blowing over the water.” (Colin Glanville, talking about 1967.) “The big gum outside the house had burnt and the heat had cracked the upstairs window. Sparks blew in and a chair was smouldering. Luckily we got back just in time.” (Ridgeway resident, talking about 1998). Ideally, your house, and windows, should be cool and wet enough to survive. Bushfires can be extreme, and quirky.
 
 Now look again. Heat travels upwards. On the leeward side of the house I have a hill that falls away. Unfortunately it has many gums and wattles. After a fire front has passed that area may take a while to be set off by embers, but when it gets going it will be very hot, burning hard, uphill, right towards the house. Are you exposed?
 
-Arduino on the trigger
+<b>Arduino on the trigger</b>
+
 The automated part of the system involves the micro-controller (an Arduino ESP32 model in my case), programmed to start the pumping sequence when:
-    • the temperature is over 45º C. Rationale: a 35 to 40º C day is not uncommon for fire weather, plus the sensor is in a box. The box is ventilated to allow air (and smoke) to move through it but an elevated temperature is expected. Then a fire will add to that.
-    • the smoke is more than 4000 ppm. Rationale: calibrated by passing smoke over the sensor. Also checked using the gas from a cigarette lighter held close to the sensor.
-    • the smoke is more than 2500 ppm AND the temperature is over 45º C. Rationale: a fire could be approaching in lower temperature and the wind is not blowing intense smoke over the unit yet. Smoke and heat together should be a useful trigger.
-    • the temperature increases 4º C in a sudden ramp. Rationale, an approaching fire might raise heat more or less steadily above the ambient hot day temperature, even on a 25º C day. Any weather hotter than 20º with winds more that 20 knots plus low humidity can be bad fire weather. (The 20/20 rule.) The system takes an average of a ten second period (call this a decade) and compares it against the decade just before, and just before that, looking back over the past nine decades.
+
+• the temperature is over 45º C. Rationale: a 35 to 40º C day is not uncommon for fire weather, plus the sensor is in a box. The box is ventilated to allow air (and smoke) to move through it but an elevated temperature is expected. Then a fire will add to that.
+
+• the smoke is more than 4000 ppm. Rationale: calibrated by passing smoke over the sensor. Also checked using the gas from a cigarette lighter held close to the sensor.
+
+• the smoke is more than 2500 ppm AND the temperature is over 45º C. Rationale: a fire could be approaching in lower temperature and the wind is not blowing intense smoke over the unit yet. Smoke and heat together should be a useful trigger.
+
+• the temperature increases 4º C in a sudden ramp. Rationale, an approaching fire might raise heat more or less steadily above the ambient hot day temperature, even on a 25º C day. Any weather hotter than 20º with winds more that 20 knots plus low humidity can be bad fire weather. (The 20/20 rule.) The system takes an average of a ten second period (call this a decade) and compares it against the decade just before, and just before that, looking back over the past nine decades.
 
 These figures have not been tested in a bush fire! We need many units and some real world experience to add to the science. I will use my system to monitor the sensors and add to my knowledge and fine-tune my estimates. 
 
-Finger on the trigger
+<b>Finger on the trigger</b>
 
 It may be that your local radio, fire brigade or community fireguard alert you to an approaching fire. Fires start somewhere, you might be unlucky and it starts near you. Throw your valuables into the car, turn on the system and press the button. The spray should be working as you drive away to your evacuation centre. After one full spraying sequence it will stop. But the sensors are there waiting; as it’s triggered it will start another sequence.
 
-Blynk on the trigger
+<b>Blynk on the trigger</b>
 
 Micro-controllers are readily connected to WiFi. Some units can be connected to the mobile phone network in 4G or 5G. My system is based on the house WiFi and the unit can send and receive information over the internet. Blynk (https://blynk.io/ ) provides a fairly easily programmed system to allow Arduino style programs to interact with a phone app or via a computer. My app includes a button to start the system at a distance, and a monitor to see if it has already started due to one of the other triggers.
 
@@ -232,9 +242,10 @@ If the power to my house is lost so is my WiFi – unless I have time to change 
 
 
 The app, and the start button, are useful for testing the system –  especially to check if program changes work correctly.
-Part 2 – Software and Communication
 
-Arduino to PCB – a steep learning curve
+<b><i>Part 2 – Software and Communication>?</i></b>
+
+<i>Arduino to PCB – a steep learning curve</i>
 
 A number of people I have talked to expressed interest in the system, but were daunted by having to learn electronics and programming. This section explains a little of what is involved - those already conversant with Arduino programming, OTA, circuit design and board making etc may skip this section. 
 
@@ -256,8 +267,9 @@ Then on to Blynk and the phone app. Once again there were many examples to look 
 My program incorporates not only the triggers and pump start-stop relays, but also WiFi and OTA, Telnet and Blynk. And I had to make sure that the basic triggers would keep working if the WiFi was unavailable – quite possible in a real bush fire.
 
 Pete Knight, a moderator on the Blynk forum, recommends ESP32 boards, and also, ‘keep your main loop clean’. The forum proved invaluable. The programming was more of a challenge than soldering up the parts.
+               
+<i>Breadboards to PCBs</i>
 
-               Breadboards to PCBs
 I started with a basic ‘push in the leads’ breadboard to test the idea. Wires everywhere! And hardly robust – after a week some of the connections were loose. On to a solderable breadboard with components on the front and fairly linear wiring on the reverse. Still rather messy and a dry joint was very hard to track down. The soldering was tricky too, I needed magnifiers to see what I was doing and a new soldering iron with a tiny point. I finally landed on a battery powered 6W soldering iron from Jaycar https://www.jaycar.com.au/battery-powered-6w-soldering-iron/p/TS1535?srsltid=AfmBOooegESU0W7gDC9mIWZrKJpWLnCHWekQW4WTpALk9IwkM9n9iz5e
 Only 6 watts? You couldn’t burn your finger on that could you? It’s very adequate for PCBs and has the added benefit of longer protection of the tip. You only heat it up when you need it (10 seconds). No cord! I bought some heavy duty re-chargeable batteries and I’m still on the first charge.
 
