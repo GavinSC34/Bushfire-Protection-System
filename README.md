@@ -129,6 +129,7 @@ How many of each? I will have two systems, one for the house and office, the oth
 It’s worth testing to see what hose works. Garden hose is 12mm, but 18mm is preferable for getting a volume of water over a long run. See https://www.bunnings.com.au/holman-18mm-x-30m-yardmate-garden-hose_p0047705. 30m costs $80. Maybe you have a short run and 12mm hose works. That’s fine, and cost is $20 to $30 for 30m. Map it out. If you put the solenoids near the pump and not at the end of the hose line, and have one line for every sprinkler or sprayer you will save on wire, but may need more hose. The mist spray lines use 13mm black poly pipe with a spray every metre or so. If you have a lot of spray outlets on the line, it requires a lot of water.
 
 <b>Micro-controller and related parts</b>
+
 The suggested controller is a Lonely Binary ESP32-S3, $30. This model has an external antenna. It also comes supplied with enough solderable pins to mount the unit on a breadboard or PCB.
 https://www.amazon.com.au/Development-Bluetooth-Espressif-ESP32-S3-DevKitC-1U-N16R8-Micropython/dp/B0CKYRGHBD?th=1
 
@@ -166,6 +167,7 @@ I used KiCad to design a PCB and SeeedStudio to make a it. A unit that lives out
 If your needs just happen to be close to my design I have a few spare PCB boards. I guess most situations will be different – the number of lines, available power and so on.
 
 <b>The External Circuitry</b>
+
 I followed the circuit suggested by LarryD in the flyback diode post mentioned above, https://forum.arduino.cc/t/flyback-diode-required-for-relay-board-and-12v-solenoid/422993
 The major difference is that I used an 8 channel relay. Jaycar provides a datasheet for this XC4418 relay, https://media.jaycar.com.au/product/resources/XC4418_datasheetMain_67843.pdf?_gl=1*1ssimnp*_gcl_au*MTAxNDQ3ODA2My4xNzI1NTA1MzA1 However that doesn’t cover how to connect the external components. Note that the centre terminal on each channel connects to the +ve, and the leftmost terminal will carry that positive to the solenoid once the relay is activated.
 
