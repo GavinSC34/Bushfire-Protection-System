@@ -172,9 +172,11 @@ Planning your system requires you to carefully evaluate how to respond to each o
 
 <b>Flame:</b> is what we are trying to avoid. Wet, cool surfaces don’t burn. However the extremes of bushfires make it hard to plan for a fire sequence. It might be ember attack, then fire front, then ember attack for hours following. It might be fire front first! Your system has to cope with the possibilities.
 
-The example installation is set up to spray a sequence of a minute each, heavy sprinkler, then mist line, then next heavy sprinkler, then next mist line, working around the house. It was checked it out on a high fire danger day with strong hot winds and everything around the house looked flooded. A sequence lasts about seven minutes, then will start again if smoke and temperature trigger it, or if set going through the phone app. Doing Community Fireguard work for Tasmanian Fire Service some years ago, I took the opportunity to ask people about their experiences in the 1967 fires – still considered one of the worst ever – and later fires. Three observations stuck with me: “The winds were 100 miles an hour, the temperature 100 degrees [F], and the dams were all empty!” (Ted Domeney. talking about 1967.) “I watched the embers flying across the Channel and saw the fires start up on Bruny Island. There were fireballs, burning balls of gas, blowing over the water.” (Colin Glanville, talking about 1967.) “The big gum outside the house had burnt and the heat had cracked the upstairs window. Sparks blew in and a chair was smouldering. Luckily we got back just in time.” (Ridgeway resident, talking about 1998). Ideally, your house, and windows, should be cool and wet enough to survive. Bushfires can be extreme, and quirky.
+The example installation is set up to spray a sequence of a minute each, heavy sprinkler, then mist line, then next heavy sprinkler, then next mist line, working around the house. It was checked it out on a high fire danger day with strong hot winds and everything around the house looked flooded. A sequence lasts about seven minutes, then will start again if smoke and temperature trigger it, or if set going through the phone app. 
 
-Now look again. Heat travels upwards. On the leeward side of the house I have a hill that falls away. Unfortunately it has many gums and wattles. After a fire front has passed that area may take a while to be set off by embers, but when it gets going it will be very hot, burning hard, uphill, right towards the house. Are you exposed?
+Doing Community Fireguard work for Tasmanian Fire Service some years ago, I took the opportunity to ask people about their experiences in the 1967 fires – still considered one of the worst ever – and later fires. Three observations stuck with me: “The winds were 100 miles an hour, the temperature 100 degrees [ºF], and the dams were all empty!” (Ted Domeney. talking about 1967.) “I watched the embers flying across the Channel and saw the fires start up on Bruny Island. There were fireballs, burning balls of gas, blowing over the water.” (Colin Glanville, talking about 1967.) “The big gum outside the house had burnt and the heat had cracked the upstairs window. Sparks blew in and a chair was smouldering. Luckily we got back just in time.” (Ridgeway resident, talking about 1998). Ideally, your house, and windows, should be cool and wet enough to survive. Bushfires can be extreme, and quirky.
+
+Now look again. Heat travels upwards. On the leeward side of this house there is a hill that falls away. Unfortunately it has many gums and wattles. After a fire front has passed that area may take a while to be set off by embers, but when it gets going it will be very hot, burning hard, uphill, right towards the house. Are you exposed?
 
 <b>Arduino on the trigger</b>
 
@@ -188,7 +190,7 @@ The automated part of the system involves the micro-controller (an Arduino ESP32
 
 • the temperature increases 4º C in a sudden ramp. Rationale, an approaching fire might raise heat more or less steadily above the ambient hot day temperature, even on a 25º C day. Any weather hotter than 20º with winds more that 20 knots plus low humidity can be bad fire weather. (The 20/20 rule.) The system takes an average of a ten second period (call this a decade) and compares it against the decade just before, and just before that, looking back over the past nine decades.
 
-These figures have not been tested in a bush fire! We need many units and some real world experience to add to the science. I will use my system to monitor the sensors and add to my knowledge and fine-tune my estimates. 
+These figures have not been tested in a bush fire! We need many units and some real world experience to add to the science. The example system will monitor the sensors through the coming summer so as to add to our knowledge and fine-tune the estimates. 
 
 <b>Finger on the trigger</b>
 
@@ -196,9 +198,9 @@ It may be that your local radio, fire brigade or community fireguard alert you t
 
 <b>Blynk on the trigger</b>
 
-Micro-controllers are readily connected to WiFi. Some units can be connected to the mobile phone network in 4G or 5G. My system is based on the house WiFi and the unit can send and receive information over the internet. Blynk (https://blynk.io/ ) provides a fairly easily programmed system to allow Arduino style programs to interact with a phone app or via a computer. My app includes a button to start the system at a distance, and a monitor to see if it has already started due to one of the other triggers.
+Micro-controllers are readily connected to WiFi. Some units can be connected to the mobile phone network in 4G or 5G. This system is based on the house WiFi and the unit can send and receive information over the internet. Blynk (https://blynk.io/) provides a fairly easily built system to allow Arduino style programs to interact with a phone app or via a computer. The app includes a button to start the system at a distance, and a monitor to see if it has already started due to one of the other triggers.
 
-If the power to my house is lost so is my WiFi – unless I have time to change my modem to battery, where it will continue to connect to the internet via 4G. (No fibre optic NBN here, but at least I have moved up from ADSL+.) Since the system is on a 12 v battery, the Arduino should keep communicating.
+If the power to the house is lost so is the WiFi – unless there is time to change the modem to battery, where it will continue to connect to the internet via 4G. (No fibre optic NBN here, but at least we have moved up from ADSL+.) Since the system is on a 12 v battery, the Arduino should keep communicating.
 
 ![image](https://github.com/user-attachments/assets/5af6a400-6e5f-418b-b32c-ca4ba8235c31)
 
@@ -209,13 +211,16 @@ The app, and the start button, are useful for testing the system –  especially
 
 <i>Arduino to PCB – a steep learning curve</i>
 
-A number of people I have talked to expressed interest in the system, but were daunted by having to learn electronics and programming. This section explains a little of what is involved - those already conversant with Arduino programming, OTA, circuit design and board making etc may skip this section. 
+A number of people have expressed interest in the system, but were daunted by having to learn electronics and programming. This section explains a little of what is involved - those already conversant with Arduino programming, OTA, circuit design and board making etc may skip this section. 
 
 If you don’t like the idea of soldering and programming, you might find someone in your family or community who is willing to take this on. The plumbing of the hose lines is something most people can do.
 
 The internet has great resources for training videos and discussion. The Arduino and Blynk websites have very useful introductions. Jaycar and other product supplier websites have not only Arduino compatible products, but also specification sheets explaining how to wire up the item and use it with a micro-controller. The Arduino IDE makes programming very straight-forward.
-               Arduino
-As of February 2020, the Arduino community included about 30 million active users based on the IDE downloads. – https://en.wikipedia.org/wiki/Arduino
+
+<b>Arduino</b>
+
+As of February 2020, the Arduino community included about 30 million active users based on the IDE downloads. 
+-– https://en.wikipedia.org/wiki/Arduino
 
 Arduino micro-controllers have been available for nearly 20 years and their programming and utility is very well developed. They have a reputation for reliability. The ‘integrated development environment’ handles the programming aspect, with a programming language check, upload to the Arduino board facility and a comprehensive library of ready to run software called ‘sketches’ – and much more.
 
@@ -224,16 +229,16 @@ For those interested in the challenge of learning to build projects and program 
 I was given an Arduino Uno to ‘start playing with’; thanks Gene. I blew it up after a few weeks by powering it from an external source, then, wanting to upload a changed sketch, I plugged the board into my computer in the usual way. Lights out. Not good. That encouraged me to work through the tutorials more carefully.
 
 I soon realised it would be easier if I could upload the sketches wirelessly. This led to OTA or Over the Air programming – a great improvement. OTA however means you can’t use the serial port in the IDE to track and debug your sketch, so you need an external window, like Telnet. Fortunately someone had already written the code, it was a matter of using the right Google search to find it.
-Then on to Blynk and the phone app. Once again there were many examples to look at, and simple sketches to begin with. Blynk also led to the choice of the ESP32 S3 board with an external antenna. I had found, for my situation, the low powered boards need this extra hardware.
+Then on to Blynk and the phone app. Once again there were many examples to look at, and simple sketches to begin with. Blynk also led to the choice of the ESP32 S3 board with an external antenna. I had found, for this situation, the low powered boards need this extra hardware.
 
-My program incorporates not only the triggers and pump start-stop relays, but also WiFi and OTA, Telnet and Blynk. And I had to make sure that the basic triggers would keep working if the WiFi was unavailable – quite possible in a real bush fire.
+The code incorporates not only the triggers and pump start-stop relays, but also WiFi and OTA, Telnet and Blynk. And I had to make sure that the basic triggers would keep working if the WiFi was unavailable – quite possible in a real bush fire.
 
 Pete Knight, a moderator on the Blynk forum, recommends ESP32 boards, and also, ‘keep your main loop clean’. The forum proved invaluable. The programming was more of a challenge than soldering up the parts.
                
 <i>Breadboards to PCBs</i>
 
 I started with a basic ‘push in the leads’ breadboard to test the idea. Wires everywhere! And hardly robust – after a week some of the connections were loose. On to a solderable breadboard with components on the front and fairly linear wiring on the reverse. Still rather messy and a dry joint was very hard to track down. The soldering was tricky too, I needed magnifiers to see what I was doing and a new soldering iron with a tiny point. I finally landed on a battery powered 6W soldering iron from Jaycar https://www.jaycar.com.au/battery-powered-6w-soldering-iron/p/TS1535?srsltid=AfmBOooegESU0W7gDC9mIWZrKJpWLnCHWekQW4WTpALk9IwkM9n9iz5e
-Only 6 watts? You couldn’t burn your finger on that could you? It’s very adequate for PCBs and has the added benefit of longer protection of the tip. You only heat it up when you need it (10 seconds). No cord! I bought some heavy duty re-chargeable batteries and I’m still on the first charge.
+Only 6 watts? It’s very adequate for PCBs and has the added benefit of longer protection of the tip. You only heat it up when you need it (10 seconds). No cord! I bought some heavy duty re-chargeable batteries and I’m still on the first charge.
 
 KiCad was suggested for PCB design. Thanks Gene.
 
