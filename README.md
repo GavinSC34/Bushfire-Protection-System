@@ -83,19 +83,19 @@ While a 12v system is designed for the 240v power supply going down, you may wan
 
 Each situation will be different. For those with off-grid power and a large dam, there is less infrastructure. Much of the work involves siting sprinklers, leading hoses to them, and fitting solenoid valves and wires. The micro-controller costs are surprisingly low but learning to code Arduino boards and the Blynk phone app is a steep learning curve for those not immersed in IT. My code is freely available as an example.
 
-Is it worth doing?
+<i>Is it worth doing?</i>
 
 While an automated spray/sprinkler system cannot guarantee your home will survive a bushfire, it should certainly improve your chances. With climate change and more forceful evacuation messages it should provide better peace of mind, if not save your situation. Do you have to evacuate? Legally, in most jurisdictions, the answer is no. However it is usually the safest option if done early. Consider not only your safety, but the safety of fire fighters.
 
-How good is the science?
+<i>How good is the science?</i>
 
 The short answer is, it’s early days. Smoke sensors have been around for years and are utilised in building fire systems and smoke alarms. Temperature sensors are likewise proven items, as anyone with a home weather station can attest. Micro-controllers drive anything from washing machines to coffee makers. Phone apps are ubiquitous. What isn’t known is what level to set the ‘triggers’. How long to spray for? Will it be enough water in high wind? What can go wrong in my situation? The battery will pump continuously for maybe an hour, and longer with intermittent pumping. Is that enough? Will the electronics be robust enough? All these can be considered however, and adapted to your situation. Plus, we need many installations and many tests before final guidelines can be provided. 
 
-Water
+<b>Water</b>
 
 Properties such as mine without a (reliable) water supply will need a water tank. A 4600 litre tank, minimum, is suggested for a small to medium sized house. More water is needed to protect sheds and outbuildings in addition. The tank(s) are dedicated to fire safety in the summer. 
 
-Hardware for water distribution
+<b>Hardware for water distribution</b>
 
 SEAFLO 55 Series Water Pressure Pump (12V/5.5GPM/60PSI) (20.8LPM/413Kpa) $224, Amazon
 
@@ -123,12 +123,12 @@ VYRSA 35 3/4" Brass Full-Circle Impact Sprinkler Dural Irrigation $52.58
 https://duralirrigation.com.au/products/vyrsa-35-3-4-brass-full-circle-impact-sprinkler
 This second sprinkler promises better performance with the above pump and an 18mm (¾”) supply hose, according to it’s specifications.
 
-Pipe and Hose
+<b>Pipe and Hose</b>
 How many of each? I will have two systems, one for the house and office, the other for the sheds. That’s two pumps, solar panels and chargers. The house has four impact sprinklers and solenoids for them, plus three spray/mist lines and solenoids for each hose line. Wire depends on distance from the pump and battery and how many ‘arms’ the system has. The sheds will have a similar arrangement.
 
 It’s worth testing to see what hose works. Garden hose is 12mm, but 18mm is preferable for getting a volume of water over a long run. See https://www.bunnings.com.au/holman-18mm-x-30m-yardmate-garden-hose_p0047705. 30m costs $80. Maybe you have a short run and 12mm hose works. That’s fine, and cost is $20 to $30 for 30m. Map it out. If you put the solenoids near the pump and not at the end of the hose line, and have one line for every sprinkler or sprayer you will save on wire, but may need more hose. The mist spray lines use 13mm black poly pipe with a spray every metre or so. If you have a lot of spray outlets on the line, it requires a lot of water.
 
-Micro-controller and related parts
+<b>Micro-controller and related parts</b>
 The suggested controller is a Lonely Binary ESP32-S3, $30. This model has an external antenna. It also comes supplied with enough solderable pins to mount the unit on a breadboard or PCB.
 https://www.amazon.com.au/Development-Bluetooth-Espressif-ESP32-S3-DevKitC-1U-N16R8-Micropython/dp/B0CKYRGHBD?th=1
 
@@ -160,14 +160,12 @@ Circuit diagram:
 ![image](https://github.com/user-attachments/assets/e892fe29-462a-4b33-82c1-cd006e720507)
 
 
-
-
-PCB
+<b>PCB</b>
 
 I used KiCad to design a PCB and SeeedStudio to make a it. A unit that lives out in the weather, even if it is in a plastic box, will be prone to corrosion. I wanted everything to be as reliable as I could make it.
 If your needs just happen to be close to my design I have a few spare PCB boards. I guess most situations will be different – the number of lines, available power and so on.
 
-       The External Circuitry
+<b>The External Circuitry</b>
 I followed the circuit suggested by LarryD in the flyback diode post mentioned above, https://forum.arduino.cc/t/flyback-diode-required-for-relay-board-and-12v-solenoid/422993
 The major difference is that I used an 8 channel relay. Jaycar provides a datasheet for this XC4418 relay, https://media.jaycar.com.au/product/resources/XC4418_datasheetMain_67843.pdf?_gl=1*1ssimnp*_gcl_au*MTAxNDQ3ODA2My4xNzI1NTA1MzA1 However that doesn’t cover how to connect the external components. Note that the centre terminal on each channel connects to the +ve, and the leftmost terminal will carry that positive to the solenoid once the relay is activated.
 
@@ -183,15 +181,20 @@ For eight channels the wiring to each solenoid is repeated in parallel. The deta
 ![image](https://github.com/user-attachments/assets/7cb8f9e8-e74d-4acf-b04f-37956c41cec2)
 
 
-Bushfire behaviour
+<b>Bushfire behaviour</b>
 
 Bushfire attack essentially takes five forms:
-    • Wind: Strong winds resulting from severe bushfires will drive embers into vulnerable areas of a building, preheat and dry fuel ahead of a fire, lift roofing and extend flames along a more horizontal plane closer to building elements.
-    • Smoke: While smoke will cause minimal damage to property, it can severely affect the health of residents. Smoke is a significant factor in at risk developments, particularly where residents are susceptible to respiratory disorders. Smoke can also reduce visibility during evacuation or shelter situations.
-    • Embers: Ember attack is responsible for most bushfire related building fires. Embers can also cause spotting in advance of the bushfire and ignite building elements.
-    • Radiant heat: Radiant heat can severely impair the health of residents and the integrity of building elements. Radiant heat can prevent emergency services personnel assisting occupants of at risk developments.
-    • Flame: Flame attack will severely restrict fire fighting operations, resulting in the ignition of building elements and a threat to the health of residents and their capacity to evacuate the area.
-– NSW Rural Fire Service, https://www.rfs.nsw.gov.au/plan-and-prepare/building-in-a-bush-fire-area/what-you-need-to-know/decision-tree-pages/goal-13
+    • <b>Wind:</b> Strong winds resulting from severe bushfires will drive embers into vulnerable areas of a building, preheat and dry fuel ahead of a fire, lift roofing and extend flames along a more horizontal plane closer to building elements.
+    
+    • <b>Smoke:</b> While smoke will cause minimal damage to property, it can severely affect the health of residents. Smoke is a significant factor in at risk developments, particularly where residents are susceptible to respiratory disorders. Smoke can also reduce visibility during evacuation or shelter situations.
+    
+    • <b>Embers:</b> Ember attack is responsible for most bushfire related building fires. Embers can also cause spotting in advance of the bushfire and ignite building elements.
+    
+    • <b>Radiant heat:</b> Radiant heat can severely impair the health of residents and the integrity of building elements. Radiant heat can prevent emergency services personnel assisting occupants of at risk developments.
+    
+    • <b>Flame:</b> Flame attack will severely restrict fire fighting operations, resulting in the ignition of building elements and a threat to the health of residents and their capacity to evacuate the area.
+    
+-– NSW Rural Fire Service, https://www.rfs.nsw.gov.au/plan-and-prepare/building-in-a-bush-fire-area/what-you-need-to-know/decision-tree-pages/goal-13
 
 Your system
 Planning your system requires you to carefully evaluate how to respond to each of those elements of bushfire behaviour.
