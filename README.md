@@ -53,9 +53,6 @@ If the WiFi is unavailable the sensors will still work automatically. The mobile
 
 Development of the concept is welcomed.
 
-9 Sept 2024
-GavinSC34
-
 ---------------------------------------------
 
 Automated Sprinkler System for Bushfire Protection
@@ -83,16 +80,23 @@ As well, the system can be started by
 While a 12v system is designed for the 240v power supply going down, you may want to consider an arrangement that can start on 240v and switch to 12v only if needed. I haven’t attempted this refinement.
 
 And the cost? 
+
 Each situation will be different. For those with off-grid power and a large dam, there is less infrastructure. Much of the work involves siting sprinklers, leading hoses to them, and fitting solenoid valves and wires. The micro-controller costs are surprisingly low but learning to code Arduino boards and the Blynk phone app is a steep learning curve for those not immersed in IT. My code is freely available as an example.
 
 Is it worth doing?
+
 While an automated spray/sprinkler system cannot guarantee your home will survive a bushfire, it should certainly improve your chances. With climate change and more forceful evacuation messages it should provide better peace of mind, if not save your situation. Do you have to evacuate? Legally, in most jurisdictions, the answer is no. However it is usually the safest option if done early. Consider not only your safety, but the safety of fire fighters.
 
 How good is the science?
+
 The short answer is, it’s early days. Smoke sensors have been around for years and are utilised in building fire systems and smoke alarms. Temperature sensors are likewise proven items, as anyone with a home weather station can attest. Micro-controllers drive anything from washing machines to coffee makers. Phone apps are ubiquitous. What isn’t known is what level to set the ‘triggers’. How long to spray for? Will it be enough water in high wind? What can go wrong in my situation? The battery will pump continuously for maybe an hour, and longer with intermittent pumping. Is that enough? Will the electronics be robust enough? All these can be considered however, and adapted to your situation. Plus, we need many installations and many tests before final guidelines can be provided. 
+
 Water
+
 Properties such as mine without a (reliable) water supply will need a water tank. A 4600 litre tank, minimum, is suggested for a small to medium sized house. More water is needed to protect sheds and outbuildings in addition. The tank(s) are dedicated to fire safety in the summer. 
+
 Hardware for water distribution
+
 SEAFLO 55 Series Water Pressure Pump (12V/5.5GPM/60PSI) (20.8LPM/413Kpa) $224, Amazon
 
 Century Deep Cycle Battery N70T 102 Amp-hour 
