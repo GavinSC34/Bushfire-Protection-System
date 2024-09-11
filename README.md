@@ -32,7 +32,7 @@ In Australia and many other countries, rural residents rely on tank water. The p
 
 ![image](https://github.com/user-attachments/assets/0e590538-de56-4061-aa4a-ea10ec9b031e)
 
-**Concept **
+<b>Concept</b>
 
 Use a deep cycle battery and 12 volt pump to spray water around the house. Since a small pump has limited capacity, use a micro-controller to sequentially control a number of spray or sprinkler lines. A number of ‘triggers’ are built into the controller, the idea being that the system can be waiting while actively monitoring for a trigger to start the pumping. The triggers utilise temperature and smoke sensors programmed to automatically start the pump at critical thresholds: 
 
