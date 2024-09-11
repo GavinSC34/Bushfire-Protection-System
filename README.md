@@ -1,25 +1,11 @@
 ## Bushfire Protection System 👋
 
-<!--
-**GavinSC34/GavinSC34** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
 Climate change challenges homeowners to face the reality of increasingly frequent and
 intense bushfires. To avoid major loss of life, the advice from the fire service, police and planners
 is to evacuate. Take what you can, leave your house, and hope fire fighters can cope. And often,
 they can't cope. 
 
-The project aims to protect the house from bushfire when we are told to leave.
+The project aims to protect the house from bushfire when you are told to leave.
 Spraying systems can be actived, by the homeowner, or automatically.
 Loss of mains electricity and internet is common in major fires and is addressed.
 
@@ -28,11 +14,11 @@ Temperature and smoke sensors, as well as press button and Blynk, can start spra
 The author lives in a rural area of Tasmania, Australia. He was a volunteer fire fighter for 15 years
 and worked extensively on fire safety for the home through a community fireguard program.
 
-In Australia and many other countries, rural residents rely on tank water. The project aims to protect the house from bushfire when we are told to evacuate. There is a likelihood of losing both mains electricity and mobile phone coverage in a major fire. We have limited water to fight fires and do not have ‘off the grid’ solar power available. Your situation might be different of course, you might even have the luxury of a piped, good pressure, water supply. 
+In Australia and many other countries, rural residents rely on tank water. Many have limited water to fight fires and probably don't have ‘off the grid’ solar power available. Your situation might be different of course, you might even have the luxury of a piped, good pressure, water supply. 
 
 ![image](https://github.com/user-attachments/assets/0e590538-de56-4061-aa4a-ea10ec9b031e)
 
-Use a deep cycle battery and 12 volt pump to spray water around the house. Since a small pump has limited capacity, use a micro-controller to sequentially control a number of spray or sprinkler lines. A number of ‘triggers’ are built into the controller, the idea being that the system can be waiting while actively monitoring for a trigger to start the pumping. The triggers utilise temperature and smoke sensors programmed to automatically start the pump at critical thresholds: 
+A deep cycle battery and 12 volt pump is used to spray water around the house. Since a small pump has limited capacity, a micro-controller sequentially controls a number of spray or sprinkler lines. A number of ‘triggers’ are built into the controller. The triggers utilise temperature and smoke sensors programmed to automatically start the pump at critical thresholds: 
 
 • high temperature 
 
@@ -45,55 +31,29 @@ Use a deep cycle battery and 12 volt pump to spray water around the house. Since
 As well, the system can be started by 
 
 • a start switch (‘start and run’ switch) 
-• mobile phone switch linked to the system via the home WiFi and thus the internet. 
 
-If the WiFi is unavailable the sensors will still work automatically. The mobile phone app also reads the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires. 
+• a smart phone app switch linked to the system via the home WiFi and thus the internet. 
+
+If the WiFi is unavailable the sensors will still work automatically. The phone app also shows the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires. While a 12v system is designed for the 240v power supply going down, you may want to consider an arrangement that can start on 240v and switch to 12v only if needed. This refinement is not included here.
 
 Development of the concept is welcomed.
 
 ---------------------------------------------
+<i>What will it cost? </i>
 
-<b>Automated Sprinkler System for Bushfire Protection</b>
-
-The project aims to protect the house from bushfire when we are told to evacuate. There is a likelihood of losing both mains electricity and mobile phone coverage in a major fire. We have limited water to fight fires and do not have ‘off the grid’ solar power available. Your situation might be different of course, you might even have the luxury of a piped, good pressure, water supply.
-
-<b>Concept</b>
-
-Use a deep cycle battery and 12 volt pump to spray water around the house. Since a small pump has limited capacity, use a single board computer or micro-controller to sequentially control a number of spray or sprinkler lines. A number of ‘triggers’ are built into the controller, the idea being that the system can be waiting while actively monitoring for a trigger to start the pumping. The triggers utilise temperature and smoke sensors programmed to automatically start the pump at critical thresholds:
-
-• high temperature
-    
-• sudden rise in temperature
-    
-• heavy smoke
-    
-• elevated temperature plus smoke
-    
-As well, the system can be started by
-
-• a start switch (‘start and run’ switch)
-    
-• mobile phone switch linked to the system via the home WiFi and thus the internet. 
-    
-If the WiFi is unavailable the sensors will still work automatically. The mobile phone app also reads the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires.
-
-While a 12v system is designed for the 240v power supply going down, you may want to consider an arrangement that can start on 240v and switch to 12v only if needed. I haven’t attempted this refinement.
-
-<i>And the cost? </i>
-
-Each situation will be different. For those with off-grid power and a large dam, there is less infrastructure. Much of the work involves siting sprinklers, leading hoses to them, and fitting solenoid valves and wires. The micro-controller costs are surprisingly low but learning to code Arduino boards and the Blynk phone app is a steep learning curve for those not immersed in IT. My code is freely available as an example.
+Each situation will be different. For those with off-grid power and a large dam, there is less infrastructure. Much of the work involves siting sprinklers, leading hoses to them, and fitting solenoid valves and wires. The micro-controller costs are surprisingly low but learning to code Arduino boards and the Blynk phone app is a steep learning curve for those not immersed in IT. The code is freely available as an example.
 
 <i>Is it worth doing?</i>
 
-While an automated spray/sprinkler system cannot guarantee your home will survive a bushfire, it should certainly improve your chances. With climate change and more forceful evacuation messages it should provide better peace of mind, if not save your situation. Do you have to evacuate? Legally, in most jurisdictions, the answer is no. However it is usually the safest option if done early. Consider not only your safety, but the safety of fire fighters.
+While an automated spray/sprinkler system cannot guarantee your home will survive a bushfire, it should certainly improve your chances. With climate change and more forceful evacuation messages it should provide better peace of mind, if not save your situation. Do you have to evacuate? Legally, in most Australlan jurisdictions, the answer is no. However it is usually the safest option if done early. Consider not only your safety, but the safety of fire fighters.
 
 <i>How good is the science?</i>
 
-The short answer is, it’s early days. Smoke sensors have been around for years and are utilised in building fire systems and smoke alarms. Temperature sensors are likewise proven items, as anyone with a home weather station can attest. Micro-controllers drive anything from washing machines to coffee makers. Phone apps are ubiquitous. What isn’t known is what level to set the ‘triggers’. How long to spray for? Will it be enough water in high wind? What can go wrong in my situation? The battery will pump continuously for maybe an hour, and longer with intermittent pumping. Is that enough? Will the electronics be robust enough? All these can be considered however, and adapted to your situation. Plus, we need many installations and many tests before final guidelines can be provided. 
+The short answer is, it’s early days. Smoke sensors have been around for years and are utilised in building fire systems and smoke alarms. Temperature sensors are likewise proven items, as anyone with a home weather station can attest. Micro-controllers drive anything from washing machines to coffee makers. Phone apps are ubiquitous. What isn’t known is what level to set the ‘triggers’. How long to spray for? Will it be enough water in high wind? What can go wrong in your situation? The battery will pump continuously for maybe an hour, longer with intermittent pumping. Is that enough? Will the electronics be robust enough? All these can be considered however, and adapted to your situation. Plus, we need many installations and many tests before final guidelines can be provided. 
 
 <b>Water</b>
 
-Properties such as mine without a (reliable) water supply will need a water tank. A 4600 litre tank, minimum, is suggested for a small to medium sized house. More water is needed to protect sheds and outbuildings in addition. The tank(s) are dedicated to fire safety in the summer. 
+Properties without a reliable water supply will need a water tank. A 4600 litre tank, minimum, is suggested for a small to medium sized house. More water is needed to protect sheds and outbuildings. The tank(s) are best dedicated to fire safety in the summer. 
 
 <b>Hardware for water distribution</b>
 
@@ -124,7 +84,7 @@ https://duralirrigation.com.au/products/vyrsa-35-3-4-brass-full-circle-impact-sp
 This second sprinkler promises better performance with the above pump and an 18mm (¾”) supply hose, according to it’s specifications.
 
 <b>Pipe and Hose</b>
-How many of each? I will have two systems, one for the house and office, the other for the sheds. That’s two pumps, solar panels and chargers. The house has four impact sprinklers and solenoids for them, plus three spray/mist lines and solenoids for each hose line. Wire depends on distance from the pump and battery and how many ‘arms’ the system has. The sheds will have a similar arrangement.
+How many of each? Maybe you need two systems, one for the house, the other for the sheds. That’s two pumps, two batteries and maybe onesolar panel and charger. The example house has four impact sprinklers and solenoids for them, plus three spray/mist lines and solenoids for each hose line. Connecting wire depends on distance from the pump and battery and how many ‘arms’ the system has. The sheds will have a similar arrangement.
 
 It’s worth testing to see what hose works. Garden hose is 12mm, but 18mm is preferable for getting a volume of water over a long run. See https://www.bunnings.com.au/holman-18mm-x-30m-yardmate-garden-hose_p0047705. 30m costs $80. Maybe you have a short run and 12mm hose works. That’s fine, and cost is $20 to $30 for 30m. Map it out. If you put the solenoids near the pump and not at the end of the hose line, and have one line for every sprinkler or sprayer you will save on wire, but may need more hose. The mist spray lines use 13mm black poly pipe with a spray every metre or so. If you have a lot of spray outlets on the line, it requires a lot of water.
 
@@ -139,7 +99,7 @@ Automotive Fused Relay SPST 30A, 12.95 Jaycar
 https://www.jaycar.com.au/automotive-fused-relay-spst-30a/p/SY4077?pos=1&queryId=9bb946e0decf165f56a96eda1acf7d23
 The 12v water pump has a high electrical load, particularly when starting up. This heavy duty relay connects the positive from the deep cycle battery to the positive of the pump. When the micro-controller ‘pump’ relay is activated it in turn switches this one. (Two relays piggy-backed). Heavy duty wiring can thus be fully employed between the battery and the pump.
 
-Power supply regulator, 12v to 5v. Arduino Compatible DC Voltage Regulator Module CAT.NO: XC4514 Jaycar $10.25. I tried a few different regulators and some failed, ruining parts. This one has proven to be stable. 
+Power supply regulator, 12v to 5v. Arduino Compatible DC Voltage Regulator Module CAT.NO: XC4514 Jaycar $10.25. Different regulators were tried and some failed, ruining parts. This one has proven to be stable. 
 https://www.jaycar.com.au/arduino-compatible-dc-voltage-regulator-module/p/XC4514
 Temperature sensor TMP36 - Analog Temperature sensor, Little Bird Electronics $5.80 https://littlebirdelectronics.com.au/products/tmp36-analog-temperature-sensor-tmp36?_pos=16&_sid=ebc1da120&_ss=r Note that different sensors, even in the same TMP36 package, can have the anode and cathode reversed. Check the data sheet carefully and don’t get them mixed up.
 MQ-2 smoke sensor module, Little Bird Electronics $9.66.
@@ -163,22 +123,22 @@ Circuit diagram:
 
 <b>PCB</b>
 
-I used KiCad to design a PCB and SeeedStudio to make a it. A unit that lives out in the weather, even if it is in a plastic box, will be prone to corrosion. I wanted everything to be as reliable as I could make it.
-If your needs just happen to be close to my design I have a few spare PCB boards. I guess most situations will be different – the number of lines, available power and so on.
+KiCad was used to design a PCB and SeeedStudio to make a it. A unit that lives out in the weather, even if it is in a plastic box, will be prone to corrosion. Since there is a lot at stake, everything to be as reliable as you could make it.
+If your needs just happen to be close to this design, there are a few spare PCB boards available. However most situations will be different – the number of lines, available power and so on.
 
 <b>The External Circuitry</b>
 
-I followed the circuit suggested by LarryD in the flyback diode post mentioned above, https://forum.arduino.cc/t/flyback-diode-required-for-relay-board-and-12v-solenoid/422993
-The major difference is that I used an 8 channel relay. Jaycar provides a datasheet for this XC4418 relay, https://media.jaycar.com.au/product/resources/XC4418_datasheetMain_67843.pdf?_gl=1*1ssimnp*_gcl_au*MTAxNDQ3ODA2My4xNzI1NTA1MzA1 However that doesn’t cover how to connect the external components. Note that the centre terminal on each channel connects to the +ve, and the leftmost terminal will carry that positive to the solenoid once the relay is activated.
+The example follows the circuit suggested by LarryD in the flyback diode post mentioned above, https://forum.arduino.cc/t/flyback-diode-required-for-relay-board-and-12v-solenoid/422993
+The major difference is the inclusion of an 8 channel relay. (Jaycar provides a datasheet for this, item XC4418.) Note that the centre terminal on each channel connects to the +ve, and the leftmost terminal will carry that positive to the solenoid once the relay is activated.
 
-In my design the ESP32, buck converter (or voltage regulator) and relays are all housed in one box, but the wiring is almost the same. Important difference: an eight channel relay takes 12v, so the black and red wires to the relay will come from the battery end of the buck converter. Jaycar one to four channel relays use 5v as shown here.
+In the example build the ESP32, buck converter (or voltage regulator) and relays are all housed in one box, but the wiring is almost the same. <i>Important difference: an eight channel relay takes 12v, so the black and red wires to the relay will come from the battery end of the buck converter.</i> Jaycar one to four channel relays use 5v as shown here.
 
 ![image](https://github.com/user-attachments/assets/fa903b7d-eb2b-4657-95dd-168ee2593b55)
 
 
 Attrib: LarryD.
 
-For eight channels the wiring to each solenoid is repeated in parallel. The detailed illustration below shows the eight channel hookup, the horizontal red +ve wires are connecting each centre pin. The lower red wires, when switched, will take the +ve to the solenoids or the pump. The dark plugs at the bottom are waterproof connectors. Note this is not automotive style +ve and -ve wiring in the connectors.
+For eight channels the wiring to each solenoid is repeated. The detailed illustration below shows the eight channel hookup, the horizontal red +ve wires are connecting each centre pin. The lower red wires, when switched, will take the +ve to the solenoids or the pump. The dark plugs at the bottom are waterproof connectors. Note this is not automotive style +ve and -ve wiring in the connectors.
 
 ![image](https://github.com/user-attachments/assets/7cb8f9e8-e74d-4acf-b04f-37956c41cec2)
 
@@ -204,15 +164,15 @@ Planning your system requires you to carefully evaluate how to respond to each o
 
 <b>Wind:</b> you should be aware of your most likely wind direction for bush fire. Gale-force hot winds, which way do they come? What’s affecting the direction? Valleys, trees, vegetation? That side of your house may need more water. If you get the chance, set up a sprinkler next high fire danger day and see what it does. Think about wind carrying your water spray away from where it will be effective. How long will it take to dry that side of your house if you do spray it? How long does it take to wet it down?
 
-<b>Smoke:</b> isn’t going to burn your house down, but is a warning and thus a trigger for your system. You can have intense smoke from kilometres away, think about how that might work. Really intense pungent smoke is usually an indication that a fire is on top of you. If you have limited water, that should be your trigger. I used a beekeeper’s smoker to calibrate my system.
+<b>Smoke:</b> isn’t going to burn your house down, but is a warning and thus a trigger for your system. You can have intense smoke from kilometres away, think about how that might work. Really intense pungent smoke is usually an indication that a fire is on top of you. If you have limited water, that should be your trigger. You might use a beekeeper’s smoker to calibrate my system.
 
-<b>Embers:</b> the peril of eucalyptus forests. Consider your house from top to bottom. I have a Colourbond roof and vertical board walls. I have a fine mesh gutter guard in all the buildings’ gutters – for keeping leaves and embers out of my gutters and also to keep leaves out of my water tanks. To cool the boards and windows I have a fine mist line high up the walls and running all the way around the house. This also serves to add to the accumulated water at the foot of the walls, because that is where smouldering or even burning leaves will gather. Further out, I have the heavy duty sprinklers spraying in an arc to saturate the closer trees, shrubs, lawns and walkways.
+<b>Embers:</b> the peril of eucalyptus forests. Consider your house from top to bottom. The example situation has a Colourbond roof and vertical board walls. There is a fine mesh gutter guard in all the buildings’ gutters – for keeping leaves and embers out of the gutters and also to keep leaves out of the water tanks. To cool the boards and windows there ise a fine mist line high up the walls and running all the way around the house. This also serves to add to the accumulated water at the foot of the walls, because that is where smouldering or even burning leaves will gather. Further out, there are the heavy duty sprinklers spraying in an arc to saturate the closer trees, shrubs, lawns and walkways.
 
 <b>Radiant heat:</b> what fuel is near the house? Remove flammable trees or have enough water and spray power to wet them down. Imagine your favourite gums on fire, up their bark and in their crowns. Don’t have an avenue of such trees around your house, particularly on the fire weather side, separated trees are better. Look at the trees for wind protection (needed) and trees as fuel (a problem). It’s a tricky balance that has to be addressed. Also look at adjacent sheds or buildings. Can they catch alight? Look to your windows, how might they be affected?
 
 <b>Flame:</b> is what we are trying to avoid. Wet, cool surfaces don’t burn. However the extremes of bushfires make it hard to plan for a fire sequence. It might be ember attack, then fire front, then ember attack for hours following. It might be fire front first! Your system has to cope with the possibilities.
 
-Mine is set up to spray a sequence of a minute each, heavy sprinkler, then mist line, then next heavy sprinkler, then next mist line, working around the house. I checked it out on a high fire danger day with high winds and everything around the house looked flooded. A sequence lasts about seven minutes, then will start again if smoke and temperature trigger it, or I set it going through my phone app. Doing Community Fireguard work for Tasmanian Fire Service some years ago, I took the opportunity to ask people about their experiences in the 1967 fires – still considered one of the worst ever – and later fires. Three observations stuck with me: “The winds were 100 miles an hour, the temperature 100 degrees [F], and the dams were all empty!” (Ted Domeney. talking about 1967.) “I watched the embers flying across the Channel and saw the fires start up on Bruny Island. There were fireballs, burning balls of gas, blowing over the water.” (Colin Glanville, talking about 1967.) “The big gum outside the house had burnt and the heat had cracked the upstairs window. Sparks blew in and a chair was smouldering. Luckily we got back just in time.” (Ridgeway resident, talking about 1998). Ideally, your house, and windows, should be cool and wet enough to survive. Bushfires can be extreme, and quirky.
+The example installation is set up to spray a sequence of a minute each, heavy sprinkler, then mist line, then next heavy sprinkler, then next mist line, working around the house. It was checked it out on a high fire danger day with strong hot winds and everything around the house looked flooded. A sequence lasts about seven minutes, then will start again if smoke and temperature trigger it, or if set going through the phone app. Doing Community Fireguard work for Tasmanian Fire Service some years ago, I took the opportunity to ask people about their experiences in the 1967 fires – still considered one of the worst ever – and later fires. Three observations stuck with me: “The winds were 100 miles an hour, the temperature 100 degrees [F], and the dams were all empty!” (Ted Domeney. talking about 1967.) “I watched the embers flying across the Channel and saw the fires start up on Bruny Island. There were fireballs, burning balls of gas, blowing over the water.” (Colin Glanville, talking about 1967.) “The big gum outside the house had burnt and the heat had cracked the upstairs window. Sparks blew in and a chair was smouldering. Luckily we got back just in time.” (Ridgeway resident, talking about 1998). Ideally, your house, and windows, should be cool and wet enough to survive. Bushfires can be extreme, and quirky.
 
 Now look again. Heat travels upwards. On the leeward side of the house I have a hill that falls away. Unfortunately it has many gums and wattles. After a fire front has passed that area may take a while to be set off by embers, but when it gets going it will be very hot, burning hard, uphill, right towards the house. Are you exposed?
 
