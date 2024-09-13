@@ -173,9 +173,9 @@ Planning your system requires you to carefully evaluate how to respond to each o
 <b>Flame:</b> is what we are trying to avoid. Wet, cool surfaces don’t burn. However the extremes of bushfires make it hard to plan for a fire sequence. It might be ember attack, then fire front, then ember attack for hours following. It might be fire front first! Your system has to cope with the possibilities.
 
 The example installation is set up to spray a sequence of a minute each, heavy sprinkler, then mist line, then next heavy sprinkler, then next mist line, working around the house. It was checked it out on a high fire danger day with strong hot winds and everything around the house looked flooded. A sequence lasts about seven minutes, then will start again if smoke and temperature trigger it, or if set going through the phone app. 
-
+<TABLE BORDER=5><TBODY>                        
 Doing Community Fireguard work for Tasmanian Fire Service some years ago, I took the opportunity to ask people about their experiences in the 1967 fires – still considered one of the worst ever – and later fires. Three observations stuck with me: “The winds were 100 miles an hour, the temperature 100 degrees [ºF], and the dams were all empty!” (Ted Domeney. talking about 1967.) “I watched the embers flying across the Channel and saw the fires start up on Bruny Island. There were fireballs, burning balls of gas, blowing over the water.” (Colin Glanville, talking about 1967.) “The big gum outside the house had burnt and the heat had cracked the upstairs window. Sparks blew in and a chair was smouldering. Luckily we got back just in time.” (Ridgeway resident, talking about 1998). Ideally, your house, and windows, should be cool and wet enough to survive. Bushfires can be extreme, and quirky.
-
+</TBODY></TABLE>
 Now look again. Heat travels upwards. On the leeward side of this house there is a hill that falls away. Unfortunately it has many gums and wattles. After a fire front has passed that area may take a while to be set off by embers, but when it gets going it will be very hot, burning hard, uphill, right towards the house. Are you exposed?
 
 <b>Arduino on the trigger</b>
