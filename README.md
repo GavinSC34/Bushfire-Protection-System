@@ -86,7 +86,9 @@ This second sprinkler promises better performance with the above pump and an 18m
 <b>Pipe and Hose</b>
 How many of each? Maybe you need two systems, one for the house, the other for the sheds. That’s two pumps, two batteries and maybe onesolar panel and charger. The example house has four impact sprinklers and solenoids for them, plus three spray/mist lines and solenoids for each hose line. Connecting wire depends on distance from the pump and battery and how many ‘arms’ the system has. The sheds will have a similar arrangement.
 
-It’s worth testing to see what hose works. Garden hose is 12mm, but 18mm is preferable for getting a volume of water over a long run. See https://www.bunnings.com.au/holman-18mm-x-30m-yardmate-garden-hose_p0047705. 30m costs $80. Maybe you have a short run and 12mm hose works. That’s fine, and cost is $20 to $30 for 30m. Map it out. If you put the solenoids near the pump and not at the end of the hose line, and have one line for every sprinkler or sprayer you will save on wire, but may need more hose. The mist spray lines use 13mm black poly pipe with a spray every metre or so. If you have a lot of spray outlets on the line, it requires a lot of water.
+It’s worth testing to see what hose works. Garden hose is 12mm, but 18mm is preferable for getting a volume of water over a long run. See https://www.bunnings.com.au/holman-18mm-x-30m-yardmate-garden-hose_p0047705. 30m costs $80. Maybe you have a short run and 12mm hose works. That’s fine, and cost is $20 to $30 for 30m. Map it out. Polypipe is often the best solution although joins aren't quite as easy as garden style hose. If you have 1 inch input and output on your pump, use 1 inch polypipe for delivery. Bury the hose line.
+
+If you put the solenoids near the pump and not at the end of the hose line, and have one line for every sprinkler or sprayer you will save on wire, but may need more hose. The mist spray lines use 13mm black poly pipe with a spray every metre or so. If you have a lot of spray outlets on the line, it requires a lot of water.
 
 <b>Micro-controller and related parts</b>
 
