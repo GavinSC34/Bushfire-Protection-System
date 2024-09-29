@@ -34,7 +34,9 @@ As well, the system can be started by
 
 • a smart phone app switch linked to the system via the home WiFi and thus the internet. 
 
-If the WiFi is unavailable the sensors will still work automatically. The phone app also shows the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires. While a 12v system is designed for the 240v power supply going down, you may want to consider an arrangement that can start on 240v and switch to 12v only if needed. This refinement is not included here.
+If the WiFi is unavailable the sensors will still work automatically. The phone app also shows the temperature and smoke, allowing monitoring from many kilometres away – provided the WiFi is working and the internet is available. Phone towers have been disabled in past major bushfires. While a 12v system is designed for the 240v power supply going down, you may want to consider an arrangement that can start on 240v and switch to 12v only if needed. This refinement is not included here (the simplest option may be adding a 240v battery charger).
+
+Another useful addition would be an ESP32-CAM sending photos to Blynk.
 
 Development of the concept is welcomed.
 
@@ -45,7 +47,7 @@ Each situation will be different. For those with off-grid power and a large dam,
 
 <i>Is it worth doing?</i>
 
-While an automated spray/sprinkler system cannot guarantee your home will survive a bushfire, it should certainly improve your chances. With climate change and more forceful evacuation messages it should provide better peace of mind, if not save your situation. Do you have to evacuate? Legally, in most Australlan jurisdictions, the answer is no. However it is usually the safest option if done early. Consider not only your safety, but the safety of fire fighters.
+While an automated spray/sprinkler system cannot guarantee your home will survive a bushfire, it should certainly improve your chances. With climate change and more forceful evacuation messages it should provide better peace of mind, if not save your situation. Do you have to evacuate? Legally, in most Australian jurisdictions, the answer is no. However it is usually the safest option if done early. Consider not only your safety, but the safety of fire fighters.
 
 <i>How good is the science?</i>
 
