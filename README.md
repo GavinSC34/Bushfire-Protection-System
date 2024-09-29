@@ -212,7 +212,7 @@ If the power to the house is lost so is the WiFi – unless there is time to cha
 
 The app, and the start button, are useful for testing the system –  especially to check if program changes work correctly.
 
-<b><i>Part 2 – Software and Communication>?</i></b>
+<b><i>Part 2 – Software and Communication></i></b>
 
 <i>Arduino to PCB – a steep learning curve</i>
 
