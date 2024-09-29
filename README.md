@@ -6,7 +6,7 @@ is to evacuate. Take what you can, leave your house, and hope fire fighters can 
 they can't cope. 
 
 The project aims to protect the house from bushfire when you are told to leave.
-Spraying systems can be actived, by the homeowner, or automatically.
+Spraying systems can be activated, by the homeowner, or automatically.
 Loss of mains electricity and internet is common in major fires and is addressed.
 
 Temperature and smoke sensors, as well as press button and Blynk, can start spraying.
